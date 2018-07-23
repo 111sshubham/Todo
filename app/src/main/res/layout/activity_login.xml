@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/hand" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="@dimen/_250dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_et_mail"
+                android:layout_width="@dimen/_250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorGray" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="@dimen/_250dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_et_password"
+                android:layout_width="@dimen/_250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:textColor="@color/colorGray" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="@dimen/_250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_btn"
+            android:text="@string/btn_login"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/login_tv_notAccount"
+            android:layout_width="@dimen/_250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/no_account"
+            android:textColor="@color/colorGray" />
+
+    </LinearLayout>
+</LinearLayout>
